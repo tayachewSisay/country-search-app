@@ -24,7 +24,7 @@ function searchCountry() {
             return response.json();
         })
         .then(data => {
-            const country = data[0]; // Get the first result
+            const country = data[0]; 
             const countryHtml = formatCountryData(country);
             countryInfo.innerHTML = countryHtml;
         })
